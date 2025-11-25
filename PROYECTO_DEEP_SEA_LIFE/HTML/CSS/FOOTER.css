@@ -1,0 +1,112 @@
+.pq-footer {
+  background-color: #1e3358;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.pq-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.pq-footer-logo img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.pq-footer-contacto,
+.pq-footer-pagos {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.pq-footer-contacto h3,
+.pq-footer-pagos h3,
+.pq-footer-social h4 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.pq-footer-contacto p {
+  margin: 0 0 10px;
+}
+
+.pq-footer-social {
+  margin-top: 15px;
+}
+
+.pq-footer-social-icons img,
+.pq-footer-payment-icons img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.pq-footer-social-icons img:hover,
+.pq-footer-payment-icons img:hover {
+  transform: scale(1.1);
+}
+
+.pq-footer-payment-icons {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pq-footer-legal {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .pq-footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pq-footer-contacto,
+  .pq-footer-pagos {
+    max-width: 100%;
+  }
+
+  .pq-footer-logo img {
+    max-width: 200px;
+  }
+
+  .pq-footer-social-icons img,
+  .pq-footer-payment-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pq-footer {
+    padding: 30px 15px 15px;
+    font-size: 13px;
+  }
+
+  .pq-footer-social-icons img,
+  .pq-footer-payment-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}

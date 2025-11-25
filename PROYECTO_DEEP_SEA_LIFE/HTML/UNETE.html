@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Únete</title>
+  <link rel="stylesheet" href="CSS/ESTILOS.css" />
+
+    <header class="top-header">
+        <div class="logo-container">
+          <a href="INDEX.html">
+            <img src="CSS/IMAGENES/LOGO.png" alt="Logo Deep Sea Life" class="logo-img" />
+          </a>
+        </div>
+
+        <nav class="top-nav">
+        
+        <div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Nosotros</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="CONOCENOS.html">Conócenos</a></li>
+            <li><a href="QUEHACEMOS.html">¿Qué hacemos?</a></li>
+            <li><a href="ESTRATEGIA.html">Estrategia</a></li>
+          </ul>
+        </div>
+
+  <span class="divider">|</span>
+
+   <div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Conservación</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="CONSERVACION.html">Conservación Marina</a></li>
+            <li><a href="PESCASOSTENIBLE.html">Pesca Sostenible</a></li>
+            <li><a href="PLASTICOS.html">Contaminación oceánica</a></li>
+          </ul>
+        </div>
+        <span class="divider">|</span>
+
+<div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Convocatorias</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="UNETE.html">Únete</a></li>
+            <li><a href="HISTORIA.html">Actúa</a></li>
+          </ul>
+        </div>
+
+        <span class="divider">|</span>
+
+  <a href="donaciones.html">Donaciones</a>
+  <span class="divider">|</span>
+
+  <a href="contacto.html">Contacto</a>
+</nav>
+   </header>
+</head>
+<br>
+<br>
+<body>
+   <div class="register-container">
+    <h2>Crear Cuenta</h2>
+    <form action="PHP/REGISTRO.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="text" name="apellido" placeholder="Apellido" required>
+      <input type="email" name="correo" placeholder="Correo" required>
+      <input type="password" name="contrasena" placeholder="Contraseña" required>
+      <select name="genero" required>
+        <option value="">Género</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <input type="date" name="fecha_nacimiento" required>
+      <button type="submit">Registrarse</button>
+    </form>
+    <h2>Ponte en Contacto</h2>
+    <p><strong> Contacto: </strong>Deepsea@contactanos.com</p>
+  </div>  
+
+
+   <link rel="stylesheet" href="CSS/FOOTER.css">
+
+<footer class="pq-footer">
+  <div class="pq-footer-container">
+    
+    <div class="footer-section">
+            <h2>AYÚDANOS A PROTEGER LOS SISTEMAS MARINOS</h2>
+            <p>Deep Sea Life necesita tu apoyo para proteger los océanos y la vida marina.</p>
+            <a href="HISTORIA.html" class="btn">Dona ahora</a>
+        </div>
+
+    <div class="footer-section">
+            <h2>ÚNETE A DEEP SEA LIFE</h2>
+            <p>Inscríbete para recibir actualizaciones y alertas de acción o convocatorias.</p>
+
+            <a href="UNETE.html" class="btn">Únete a nosotros</a>
+        </div>
+    </div>
+
+<div class="pq-footer-social">
+        <h4>Síguenos</h4>
+        <br>
+        <div class="pq-footer-social-icons">
+          <a href="https://www.facebook.com/CONSERVACION"><img src="CSS/IMAGENES/F.jpg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/CONSERSUBMAR"><img src="CSS/IMAGENES/I.jpg" alt="Instagram"></a>
+          <a href="https://www.x.com/CONSERSUBMAR"><img src="CSS/IMAGENES/X.jpg" alt="X"></a>
+          <a href="https://www.tiktok.com/CONSERSUBMAR"><img src="CSS/IMAGENES/T.jpg" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+<br>
+  <div class="pq-footer-legal">
+    <p>Promovemos la conservación marina y el manejo sostenible de los recursos pesqueros de las comunidades de México.</p>
+    <p>&copy; 2025 Deep Sea Life/Vida Submarina. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="JS/MENU.js" defer></script>
+</body>
+</html>
