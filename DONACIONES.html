@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donaciones</title>
+  <link rel="stylesheet" href="CSS/ESTILOS.css" />
+</head>
+
+<body>
+
+
+<header class="top-header">
+        <div class="logo-container">
+          <a href="INDEX.html">
+            <img src="CSS/IMAGENES/LOGO.png" alt="Logo Deep Sea Life" class="logo-img" />
+          </a>
+        </div>
+
+        <nav class="top-nav">
+        
+        <div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Nosotros</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="CONOCENOS.html">Conócenos</a></li>
+            <li><a href="QUEHACEMOS.html">¿Qué hacemos?</a></li>
+            <li><a href="ESTRATEGIA.html">Estrategia</a></li>
+          </ul>
+        </div>
+
+  <span class="divider">|</span>
+
+   <div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Conservación</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="CONSERVACION.html">Conservación Marina</a></li>
+            <li><a href="R.html">Recursos Oceánicos</a></li>
+            <li><a href="PESCASOSTENIBLE.html">Pesca Sostenible</a></li>
+            <li><a href="PLASTICOS.html">Contaminación oceánica</a></li>
+          </ul>
+        </div>
+        <span class="divider">|</span>
+
+<div class="categories-dropdown">
+          <button class="categories-button">
+            <span class="text"> Convocatorias</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="UNETE.html">Únete</a></li>
+            <li><a href="A.html">Actúa</a></li>
+          </ul>
+        </div>
+
+        <span class="divider">|</span>
+  <a href="DONACIONES.html">Donaciones</a>
+
+  <span class="divider">|</span>
+  <a href="CONTACTO.html">Contacto</a>
+</nav>
+   </header>
+
+    <br>
+  <div class="form-container">
+
+    <h2 class="titulo">Formulario de Donación</h2>
+
+ <p class="donaciones-descripcion">Apoya nuestro trabajo para proteger los océanos con tu donativo. Gracias a ti podemos proteger la vida marina y sus hábitats.</p>
+    <h3 class="subtitulo">Datos Personales</h3>
+    <hr class="linea">
+
+    <form id="donationForm">
+
+        <label>País</label>
+        <select id="pais" required>
+            <option value="">Seleccione</option>
+            <option>Mexico</option>
+            <option>USA</option>
+            <option>Colombia</option>
+            <option>Argentina</option>
+            <option>Brasil</option>
+            <option>España</option>
+        </select>
+
+        <div class="fila">
+            <div class="col">
+                <label>Nombre(s)</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <br>
+
+            <div class="col">
+                <label>Apellidos</label>
+                <input type="text" id="apellido" required>
+            </div>
+        </div>
+
+        <label>Correo Electrónico</label>
+        <input type="email" id="correo" placeholder="Email" required>
+
+        <label>Dirección</label>
+        <input type="text" id="direccion" required>
+<br>
+
+        <div class="fila">
+                <label>Estado</label>
+                <br>
+                <select id="estado" required>
+                    <option value="">Seleccione</option>
+                    <option>CDMX</option>
+                    <option>EDOMEX</option>
+                    <option>Jalisco</option>
+                    <option>Nuevo León</option>
+                    <option>Baja California</option>
+                    <option>Chihuahua</option>
+                    <option>Chiapas</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <div class="col">
+                <label>Codigo postal</label>
+                <input type="text" id="cp" required>
+
+            </div>
+        </div>
+
+        <h3 class="subtitulo">Monto a Donar</h3>
+        <hr class="linea">
+
+        <div class="montos">
+      <button type="button" class="btn-monto" data-value="25">10</button>
+        <button type="button" class="btn-monto" data-value="25">25</button>
+        <button type="button" class="btn-monto" data-value="50">50</button>
+        <button type="button" class="btn-monto" data-value="100">100</button>
+        <button type="button" class="btn-monto" data-value="250">250</button>
+        <button type="button" class="btn-monto" data-value="500">500</button>
+        <button type="button" class="btn-monto" data-value="1000">1000</button>
+      </div>
+
+        <button type="submit" id="btnDonar" class="btn-donar">Donar ahora</button>
+
+      
+      <hr class="linea">
+        <p class="donaciones-descripcion">También puede hacer su donación mediante una transferencia, haciendo uso de su banca móvil.
+<br>Los datos de nuestra cuenta son:
+<br>Cuenta: 12345678910
+<br>CLABE: 06121824300
+<br>Banco: P.F.A 3206 S.A.</p>
+
+    </form>
+</div>
+
+<link rel="stylesheet" href="CSS/FOOTER.css">
+
+<footer class="pq-footer">
+  <div class="pq-footer-container">
+
+    <div class="footer-section">
+            <h2>ÚNETE A DEEP SEA LIFE</h2>
+            <p>Inscríbete para recibir actualizaciones y alertas de acción o convocatorias.</p>
+
+            <a href="UNETE.html" class="btn">Únete a nosotros</a>
+        </div>
+    </div>
+
+<div class="pq-footer-social">
+        <h4>Síguenos</h4>
+        <br>
+        <div class="pq-footer-social-icons">
+          <a href="https://www.facebook.com/CONSERVACION"><img src="CSS/IMAGENES/F.jpg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/CONSERSUBMAR"><img src="CSS/IMAGENES/I.jpg" alt="Instagram"></a>
+          <a href="https://www.x.com/CONSERSUBMAR"><img src="CSS/IMAGENES/X.jpg" alt="X"></a>
+          <a href="https://www.tiktok.com/CONSERSUBMAR"><img src="CSS/IMAGENES/T.jpg" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+<br>
+  <div class="pq-footer-legal">
+    <p>Promovemos la conservación marina y el manejo sostenible de los recursos pesqueros de las comunidades de México.</p>
+    <p>&copy; 2025 Deep Sea Life/Vida Submarina. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="JS/MENU.js" defer></script>
+<script src="JS/BOTONESDONACION.js" defer></script>
+  
+</body>
+</html>
